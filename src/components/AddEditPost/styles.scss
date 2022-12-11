@@ -1,0 +1,153 @@
+@import "../../common/styles/sass/colors";
+
+.addPost {
+  width: 526px;
+  background: #FCFBFB;
+  border-radius: 2px;
+
+  &_contentContainer {
+    padding: 25px;
+
+    &_avatarPlaceholder {
+      width: 180px;
+      height: 108px;
+      border: 1px solid #DEDBDC;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    &_navigationButton {
+      margin-top: 35px;
+      margin-bottom: 10px;
+      cursor: pointer;
+
+      img {
+        width: 14px;
+        height: 10px;
+        margin-right: 10px;
+      }
+
+      span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #1A1718;
+      }
+    }
+
+    &_inputContainer {
+      margin-top: 20px;
+
+      &_inputName {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #737067;
+      }
+
+      &_inputField {
+        background-color: inherit;
+        border: none;
+        border-bottom: 1px solid #DEDBDC;
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #1A1718;
+
+        &:focus {
+          outline: 0;
+        }
+      }
+
+      &_blogDescription {
+        border: 1px solid #DEDBDC;
+        width: 100%;
+        min-height: 120px;
+        resize: none;
+        overflow: hidden;
+        border-radius: 2px;
+
+        &_warning {
+          border: 1px solid red;
+        }
+      }
+
+      &_select {
+        //border: 1px solid $neutralLight;
+        border-bottom: none;
+        margin-top: 20px;
+        border-radius: 2px;
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+
+
+        &_active {
+          //border-bottom: 1px solid $neutralLight;
+        }
+
+        &_header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 36px;
+          padding: 6px 12px;
+          border: 1px solid $neutralLight;
+        }
+
+        &_arrow {
+          width: 12px;
+          height: 8px;
+
+          &_active {
+            transform: rotate(180deg);
+          }
+        }
+
+        &_body {
+          width: 100%;
+          display: none;
+          position: absolute;
+          border: 1px solid $neutralLight;
+          border-top: none;
+          left: 0;
+          right: 0;
+          top: 100%;
+          z-index: 99999;
+
+          &_active {
+            display: block;
+          }
+
+          &_option {
+            padding: 6px 12px;
+            background-color: #FAF7F8;
+
+            &:hover {
+              background: #ffffff;
+            }
+          }
+        }
+      }
+    }
+
+    &_buttonBlock {
+      display: flex;
+      justify-content: end;
+      margin-top: 30px;
+    }
+  }
+}

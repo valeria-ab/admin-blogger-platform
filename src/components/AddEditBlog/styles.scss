@@ -1,0 +1,75 @@
+@import "../../common/styles/sass/colors";
+
+.blogPage {
+  &_navigationButton {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    img {
+      width: 14px;
+      height: 10px;
+      margin-right: 10px;
+    }
+
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #1A1718;
+    }
+  }
+
+  &_inputContainer {
+    margin-top: 20px;
+
+    &_inputName {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #737067;
+    }
+
+    &_inputField {
+      background-color: inherit;
+      border: none;
+      border-bottom: 1px solid #DEDBDC;
+      width: 100%;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      color: #1A1718;
+
+      &:focus {
+        outline: 0;
+      }
+      &_warning {
+        border-bottom: 1px solid red;
+      }
+    }
+
+    &_blogDescription {
+      border: 1px solid #DEDBDC;
+      width: 100%;
+      min-height: 120px;
+      resize: none;
+      overflow: hidden;
+      border-radius: 2px;
+
+      &_warning {
+        border: 1px solid red;
+      }
+    }
+  }
+
+  &_buttonBlock {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+  }
+}

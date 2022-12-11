@@ -1,0 +1,61 @@
+@import "../../common/styles/sass/fonts";
+
+.sidebar {
+  grid-area: b;
+  margin-top: 5px;
+  padding-top: 40px;
+  background-color: #FCFBFB;
+
+  &_container {
+    margin-left: 25%;
+  }
+
+  &_buttonWrapper {
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+
+    &_active,
+    &:hover {
+      border-right: 2px solid #F8346B;
+      color: #F8346B;
+    }
+
+    &_blogs {
+      background: border-box no-repeat left url("./../../assets/sideBarIcons/blogsIcon.png");
+      background-size: 18px 10px;
+
+      &_active,
+      &:hover {
+        background: border-box no-repeat left url("./../../assets/sideBarIcons/blogsIconActive.png");
+        background-size: 18px 10px;
+      }
+    }
+
+    &_posts {
+      background: border-box no-repeat left url("./../../assets/sideBarIcons/postsIcon.png");
+      background-size: 18px 18px;
+
+      &_active,
+      &:hover {
+        background: border-box no-repeat left url("./../../assets/sideBarIcons/postsIconActive.png");
+        background-size: 18px 18px;
+      }
+    }
+
+    &_button {
+      margin-left: 30px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+
+      &:hover {
+        color: #F8346B;
+      }
+    }
+  }
+}
+

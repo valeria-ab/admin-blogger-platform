@@ -1,0 +1,17 @@
+
+.blogPhotoPlaceholder {
+    height: 156px;
+    min-width: 156px;
+    border: 1px solid #DEDBDC;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    position: relative;
+    margin-right: 15px;
+    &_avatarPlaceholder {
+      height: 27px;
+      width: 33px;
+      position: absolute;
+      top: 42%;
+      left: 40%;
+    }
+}

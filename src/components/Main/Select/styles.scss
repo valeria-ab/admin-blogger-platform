@@ -1,0 +1,62 @@
+@import "../../../common/styles/sass/colors";
+
+.select {
+  //border: 1px solid $neutralLight;
+  border-bottom: none;
+  margin-top: 20px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  width: 30%;
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  &_active {
+    //border-bottom: 1px solid $neutralLight;
+  }
+
+  &_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 36px;
+    padding: 6px 12px;
+    border: 1px solid $neutralLight;
+  }
+
+  &_arrow {
+    width: 12px;
+    height: 8px;
+
+    &_active {
+      transform: rotate(180deg);
+    }
+  }
+
+  &_body {
+    width: 100%;
+    display: none;
+    position: absolute;
+    border: 1px solid $neutralLight;
+    border-top: none;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: 99999;
+
+    &_active {
+      display: block;
+    }
+
+    &_option {
+      padding: 6px 12px;
+      background-color: #FAF7F8;
+
+      &:hover {
+        background: #ffffff;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.blogPreview {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #DEDBDC;
+  margin-top: 20px;
+
+
+  &_data {
+    &_heading {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      color: #1A1718;
+      &:hover {
+        color: rgba(26, 23, 24, 0.82);
+      }
+      &:active {
+        color: rgba(248, 52, 107, 0.69);
+      }
+    }
+    &_website {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #737067;
+      a {
+        color: #3677F7;
+        text-decoration: underline;
+      }
+    }
+    &_description {
+      margin-top: 10px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+@import "./common/styles/sass/fonts";
+
+.app-wrapper {
+  font-family: $baseFontFamily;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+          "a a a"
+            "b c c"
+            "b c c";
+
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 2fr 10fr;
+  min-height: 100vh;
+}
+
+input[type="text"] {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+//.app-wrapper-content {
+//  grid-area: sidebar;
+//  background-color: cornflowerblue;
+//}
+a {
+  text-decoration: none;
+}
+

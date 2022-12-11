@@ -1,0 +1,30 @@
+@import "../../common/styles/sass/fonts";
+
+.showMoreButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  &_button {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1A1718;
+    border-radius: 2px;
+    padding: 8px 36px;
+    background-color: inherit;
+    cursor: pointer;
+    &_iconArrow {
+      width: 8px;
+      height: 4px;
+      margin-left: 10px;
+    }
+  }
+}
+

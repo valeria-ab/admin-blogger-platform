@@ -1,0 +1,20 @@
+
+.blogAvatarMiniPlaceholder {
+    height: 48px;
+    width: 48px;
+    border: 1px solid #DEDBDC;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    //position: relative;
+    margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    &_avatarPlaceholder {
+      height: 18px;
+      width: 22px;
+      //position: absolute;
+      //top: 42%;
+      //left: 40%;
+    }
+}

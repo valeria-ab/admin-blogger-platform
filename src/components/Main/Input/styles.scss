@@ -1,0 +1,37 @@
+@import "../../../common/styles/sass/colors";
+
+.inputWrapper {
+  border: 1px solid $neutralLight;
+  margin-top: 20px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  width: 65%;
+  height: 36px;
+  background: border-box no-repeat 3% url("../../../assets/input/searchIcon.png");
+  background-size: 17px 17px;
+
+  &_input {
+    width: 93%;
+    height: 100%;
+    border: none;
+    margin-left: 7%;
+    padding: 8px;
+    background: rgba(252, 251, 251, 0);
+    &::placeholder {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #B3B0B1;
+    }
+    &:focus {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: $neutralDark;
+      outline: 0;
+    }
+  }
+}
+
